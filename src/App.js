@@ -79,8 +79,23 @@ class App extends Component {
                     <Chatbot modalHandler={this.modalHandler}/>
                 ) : null}
           <StyledButton onClick={() => this.modalHandler()}>Open Chat</StyledButton>
-        </StyledInfo>
-        
+         
+          {/* <div><img alt='chain' src={image1}/></div> */}
+
+
+         <div> Or project will now take you to Bangladesh in South Asia. Have youheard of this country before?</div>
+      <div id='section-three'> Here is some info on Bangladesh:</div>
+
+      <div>It's sad, isn't it, to know that there are many children like Ravi? The good news is that you cand od something to help them!
+          First, you need to answer a couple of questions: </div>
+          <div>
+      <ol>
+      <li>Do you wear clothes from xxxx?</li>
+      <li>Do you use a mobile phone?</li>
+      <li>do you eat vegetables from greenhouses out of season?</li>
+      </ol>
+      </div>
+      </StyledInfo>
       </StyledWrapper>
     )
   }
