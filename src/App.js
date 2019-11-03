@@ -195,8 +195,8 @@ class App extends Component {
           <div id='section-five'>
             If your answers were "YES", there is a high chance that these products or materials for these products were produced in Pakistan.
           </div>
-          <div>Some of them - by children like Ravi.</div>
-          <div>So you may be connected to Ravi through a supply chain without even knowing it!</div>
+          {/* <div>Some of them - by children like Ravi.</div>
+          <div>So you may be connected to Ravi through a supply chain without even knowing it!</div> */}
           <ChainImg src={chain} alt='supply-chain'/>
           <a href='#section-six'><Arrow src={arrow} alt="arrow" /></a>
         </StyledInfo>
