@@ -1,7 +1,7 @@
 # hack-n-lead-2019-template-repository
 A project for Hack'n'Lead Zürich 2019.
 
-Our team is addressing the Thompson Reuters challenge on modern slavery.
+Our team is addressing the Thompson Reuters challenge on modern slavery. [Live version](https://ask-ravi.netlify.com/)
 
 Team members: @TatianaPan, @sigoetti, @kwahler
 
