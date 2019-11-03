@@ -1,9 +1,10 @@
-# hack-n-lead-2019-template-repository
+# Ask Ravi - Fighting modern slavery
+
 A project for Hack'n'Lead Zürich 2019.
 
 Our team is addressing the Thompson Reuters challenge on modern slavery. [Live version](https://ask-ravi.netlify.com/)
 
-Team members: @TatianaPan, @sigoetti, @kwahler
+Team members: [TatianaPan] (https://github.com/TatianaPan), [sigoetti] (https://github.com/sigoetti), [kwahler] (https://github.com/kwahler) 
 
 This project was done with React and Dialogflow from Google. 
 
