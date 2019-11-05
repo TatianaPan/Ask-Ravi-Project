@@ -108,9 +108,9 @@ const Icons = styled.img`
   margin-right: 0.5em;
 `;
 
-const Text = styled.div`
-  width: 600px;
-`;
+// const Text = styled.div`
+//   width: 600px;
+// `;
 
 class App extends Component {
 
@@ -180,11 +180,11 @@ class App extends Component {
             </StyledInfo>
           <StyledInfo>
 
-          <div id='section-four'>It's sad, isn't it, to know that there are many children like Ravi? The good news is that you cand od something to help them!
+          <div id='section-four'>It's sad, isn't it, to know that there are many children like Ravi? The good news is that you can do something to help them!
           First, you need to answer a couple of questions: </div>
           <Facts>
             <ol>
-              <li>Do you wear jeans</li>
+              <li>Do you wear jeans?</li>
               <li>Do you have leather shoes?</li>
               <li>Do you like lollipops?</li>
             </ol>
