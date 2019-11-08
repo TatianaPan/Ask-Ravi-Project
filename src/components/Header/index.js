@@ -10,7 +10,7 @@ const StyledHeader = styled.div`
     justify-content: center;
     width: 100%;
     background-color: transparent;
-    padding: .5rem 1rem;
+    padding: .5rem 0;
     border-bottom: 1px solid white;
 `;
 

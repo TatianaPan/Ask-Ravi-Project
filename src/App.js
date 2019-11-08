@@ -75,6 +75,15 @@ const Map = styled.img`
 
 const Facts = styled.div`
   font-size: 40px;
+  display: flex;
+  justify-content: start;
+  ul li {
+    
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  
+  }
 `;
 
 
@@ -108,6 +117,33 @@ const Icons = styled.img`
   margin-right: 0.5em;
 `;
 
+const Footer = styled.div`
+padding: 40px 0;
+    width: 100%;
+    margin-top: 2em;
+    bottom: 0;
+    text-align: center;
+    display: flex; 
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    :before {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 2px;
+        background: #ffffff;
+        left: 50%;
+        margin-left: -9px;
+        margin-top: -40px;
+    }
+    
+`;
+
+const Disclaimer = styled.div`
+  font-size: 14px;
+  width: 80%;
+`;
+
 // const Text = styled.div`
 //   width: 600px;
 // `;
@@ -132,25 +168,27 @@ class App extends Component {
         {/* <Chatbot /> */}
         <StyledInfo>
           <div> Hi Liam, </div>
-          <div> 
-            Have you ever heard about modern slavery and how you can make a difference? </div>
-          <div> Get ready to learn more? </div>
+          <div>
+            Have you ever heard of modern slavery?
+          Get ready to find out what it's all about and learn how you can make a difference!</div>
+
           <a href='#section-two'><Arrow src={arrow} alt="arrow" /></a>
 
           {/* <div><img alt='chain' src={image1}/></div> */}
         </StyledInfo>
 
         <StyledInfo>
-          <div id='section-two'> Our project will now take you to Pakistan in South Asia. Have you heard of this country before?</div>
+          <div id='section-two'> We will now take you to Pakistan in South Asia.
+          Have you heard of this country before?</div>
           <Info>
-          <Map src={map}  alt="pakistan" />
-          <Facts>
-          <ol>
-            <li>189 million people live in Pakistan</li>
-              <li>1,68% of the popluation live in slavery</li>
-              <li>That's 3,186,000 people</li>
-            </ol>
-          </Facts>
+            <Map src={map} alt="pakistan" />
+            <Facts>
+              <ul>
+                <li>189 million people live in Pakistan</li>
+                <li>1,68% of the popluation live in slavery</li>
+                <li>That's 3,186,000 people</li>
+              </ul>
+            </Facts>
           </Info>
           <a href='#section-three'><Arrow src={arrow} alt="arrow" /></a>
         </StyledInfo>
@@ -159,35 +197,35 @@ class App extends Component {
             Now we want to introduce you to a child from Pakistan. Meet Ravi!
           </div>
           <Faces>
-            <Smile><img src={smile1} alt='smile1'/>
-            <div>Liam</div>
+            <Smile><img src={smile1} alt='smile1' />
+              <div>Liam</div>
             </Smile>
-            
+
             <Smile>
-            <img src={smile2} alt='smile2'/>
-            <div>Ravi</div>
+              <img src={smile2} alt='smile2' />
+              <div>Ravi</div>
             </Smile>
           </Faces>
-          
-            <div>Why is Ravi so sad? Go ahead and ask him about his life.</div> 
-          
+
+          <div>Why is Ravi so sad? Go ahead and ask him about his life.</div>
+
           {/* {this.state.showModal ? (
             <Chatbot modalHandler={this.modalHandler} />
           ) : null} */}
           <Chatbot />
           {/* <StyledButton onClick={() => this.modalHandler()}>Open Chat</StyledButton> */}
           <a href='#section-four'><Arrow src={arrow} alt="arrow" /></a>
-            </StyledInfo>
-          <StyledInfo>
+        </StyledInfo>
+        <StyledInfo>
 
           <div id='section-four'>It's sad, isn't it, to know that there are many children like Ravi? The good news is that you can do something to help them!
           First, you need to answer a couple of questions: </div>
           <Facts>
-            <ol>
+            <ul>
               <li>Do you wear jeans?</li>
               <li>Do you have leather shoes?</li>
               <li>Do you like lollipops?</li>
-            </ol>
+            </ul>
           </Facts>
           <a href='#section-five'><Arrow src={arrow} alt="arrow" /></a>
         </StyledInfo>
@@ -197,21 +235,24 @@ class App extends Component {
           </div>
           {/* <div>Some of them - by children like Ravi.</div>
           <div>So you may be connected to Ravi through a supply chain without even knowing it!</div> */}
-          <ChainImg src={chain} alt='supply-chain'/>
+          <ChainImg src={chain} alt='supply-chain' />
           <a href='#section-six'><Arrow src={arrow} alt="arrow" /></a>
         </StyledInfo>
 
         <StyledInfo>
-          <div id='section-six'>And now good news!</div>
+          <div id='section-six'>And now some good news!</div>
           <div>This is what you can do to help children like Ravi to lead a better life.</div>
-        <Solutions>
-          <Point><Icons src={reduce} alt='reduce'/> <div>Buy less</div></Point>
-          <Point><Icons src={lamp} alt='be-aware'/> <div>Choose shops carefully</div></Point>
-          <Point><Icons src={recycle} alt='recycle'/> <div> Recycle</div></Point>
-          <Point><Icons src={swap} alt='swap'/> <div>Swap clothes with friends</div></Point>
+          <Solutions>
+            <Point><Icons src={reduce} alt='reduce' /> <div>Buy less</div></Point>
+            <Point><Icons src={lamp} alt='be-aware' /> <div>Choose shops carefully</div></Point>
+            <Point><Icons src={recycle} alt='recycle' /> <div> Recycle</div></Point>
+            <Point><Icons src={swap} alt='swap' /> <div>Swap clothes with friends</div></Point>
           </Solutions>
         </StyledInfo>
-
+          <Footer>
+            <Disclaimer>This web page has been developed as an early prototype of a platform 
+              for raising awareness about modern slavery at Swiss schools. It's been put together by the Think Big, Act Local team at the Hack'n'Lead 2019 hackathon.</Disclaimer>
+          </Footer>
 
       </StyledWrapper>
     )
